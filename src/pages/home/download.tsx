@@ -1,5 +1,5 @@
 import Typography from "@/components/ui/typography";
-import MobileFrameDesktop from "@/assets/mobile-frame.svg";
+// import MobileFrameDesktop from "@/assets/mobile-frame.svg";
 
 export default function Download() {
   return (
