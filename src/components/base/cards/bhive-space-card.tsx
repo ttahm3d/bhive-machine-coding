@@ -20,7 +20,9 @@ export default function BhiveSpaceCard({ space }: { space: BhiveSpace }) {
   return (
     <div className="border-[1.08px] border-[#eee7e7] p-2 flex flex-col justify-between gap-4 w-[370px] rounded-md">
       <div className="grid grid-cols-12 items-center">
-        <Typography variant="h4" className="text-[#263238] col-span-8">
+        <Typography
+          variant="h4"
+          className="text-[#263238] text-lg md:text-xl col-span-8">
           {space.name}
         </Typography>
         <div className="col-span-4 bg-[#f9f9f9] justify-self-end border-[0.47px] border-[#eee7e7] py-2 px-4 rounded-md">

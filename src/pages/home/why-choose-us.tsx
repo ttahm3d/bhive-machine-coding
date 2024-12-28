@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
       <Typography variant="h2" className="mt-20 md:mt-12 text-[#263238]">
         Why Choose us?
       </Typography>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[85px]">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[85px] gap-4 md:gap-0">
         {options.map((option, index) => (
           <WhyChooseUsCard
             key={index}
