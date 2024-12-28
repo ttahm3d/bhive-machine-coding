@@ -10,7 +10,7 @@ export default function OurSpaceOverview() {
       <Typography variant="h2" className="mt-12 text-[#263238]">
         Our Spaces Overview
       </Typography>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[85px] gap-12">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] place-items-center mt-[85px] gap-12 md:gap-8">
         {spaces.map((space) => (
           <BhiveSpaceCard key={space.id} space={space} />
         ))}

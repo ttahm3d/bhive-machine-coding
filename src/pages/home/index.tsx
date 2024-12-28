@@ -10,7 +10,6 @@ export default function HomePage() {
       <WhyChooseUs />
       <OurSpaceOverview />
       <Download />
-      <div className="pt-12"></div>
     </>
   );
 }
