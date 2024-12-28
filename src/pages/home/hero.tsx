@@ -4,8 +4,8 @@ import Typography from "@/components/ui/typography";
 export default function Hero() {
   return (
     <section>
-      <div className="grid grid-cols-12 px-5 md:px-[120px] bg-[url(./assets/background-vector-desktop.svg)] h-96 bg-no-repeat bg-right md:bg-center  bg-cover">
-        <div className="col-span-12 md:col-span-8 self-center order-2">
+      <div className="grid grid-cols-12 px-5 md:px-[120px] bg-[url(./assets/background-vector-desktop.svg)] container h-96 bg-no-repeat bg-right md:bg-center  bg-cover">
+        <div className="col-span-12 md:col-span-8 self-center order-2 md:order-none">
           <Typography
             variant="h1"
             className="text-brand-primary tracking-[-1px] hidden md:block">
