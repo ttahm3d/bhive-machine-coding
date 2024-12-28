@@ -6,6 +6,13 @@ module.exports = {
     extend: {
       container: {
         center: true,
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1440px",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -68,9 +75,6 @@ module.exports = {
           },
         },
       },
-    },
-    screens: {
-      "2xl": "1440px", // Set 1440px as the breakpoint for 2xl
     },
   },
   plugins: [require("tailwindcss-animate")],
