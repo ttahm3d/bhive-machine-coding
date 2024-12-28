@@ -8,8 +8,8 @@ export default function WhyChooseUsCard({
   title: string;
 }) {
   return (
-    <div className="flex gap-4 p-6 border-b border-r">
-      <div className="flexx items-center justify-center">
+    <div className="flex items-center gap-4 p-6 border">
+      <div className="flex items-center justify-center">
         <img src={iconUrl} alt={title} />
       </div>
       <Typography variant="h5" className="text-[#263238]">
