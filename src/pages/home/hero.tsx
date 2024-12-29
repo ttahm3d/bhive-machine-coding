@@ -19,7 +19,7 @@ export default function Hero() {
             <span className="text-brand-yellow">₹199/-!</span>
           </Typography>
         </div>
-        <div className="col-span-12 md:col-span-4 pt-1">
+        <div className="col-span-12 md:col-span-4 pt-1 self-center">
           <video src={HeroVideo} autoPlay></video>
         </div>
       </div>

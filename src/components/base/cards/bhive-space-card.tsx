@@ -14,9 +14,13 @@ export default function BhiveSpaceCard({ space }: { space: BhiveSpace }) {
     const discountOfferedForDays = discountDays[0];
     const discountPercentage =
       space.day_pass_discounts_percentage[discountOfferedForDays]?.value;
-
-    return { discountOfferedForDays, discountPercentage };
-  }, [space.day_pass_discounts_percentage]);
+    const discountedPrice =
+      space.day_pass_price * discountOfferedForDays -
+      (space.day_pass_price * discountOfferedForDays * discountPercentage) /
+        100;
+    console.log(discountedPrice);
+    return { discountedPrice, discountOfferedForDays, discountPercentage };
+  }, [space.day_pass_price, space.day_pass_discounts_percentage]);
 
   return (
     <div className="border-[1.08px] border-[#eee7e7] p-2 flex flex-col justify-between gap-4 w-[370px] rounded-md">
@@ -63,7 +67,7 @@ export default function BhiveSpaceCard({ space }: { space: BhiveSpace }) {
               Bulk Pass
             </p>
             <Typography variant="h4" className="text-[#263238]">
-              &#8377;{bulkPrice.discountOfferedForDays * space.day_pass_price}
+              &#8377;{bulkPrice.discountedPrice}
               <span className="text-xs font-medium text-[#263238]/80">
                 / {bulkPrice.discountOfferedForDays} Days
               </span>
